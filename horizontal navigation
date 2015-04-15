@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>horizontal navigation</title>
+	<style>
+		h1,h2,h3,h4,h5,a,p,body,img,ul,li{margin:0;padding:0;list-style:none;text-decoration:none;font-family:"microsoft yahei",serif;color:#333;}
+
+		.wrapper{width:80%;overflow:hidden;margin:10% auto;}		
+		.nav{width:;height:;margin-top:70px;}
+		.nav ul{overflow:hidden;}
+		.nav ul li{width:180px;height:180px;background-color:#FF8282;float:left;margin-right:50px;-webkit-border-radius:50%;display:table;border:1px solid #999;}
+		.nav ul li div{display:table-cell;vertical-align:middle;padding:10px;}
+		.nav ul li div p{font-size:80%;word-break:break-all;}
+		
+		/* 以下是css3动画样式 */		 		
+		.nav ul li{-webkit-animation:Move 2s;-webkit-animation-timing-function:linear;position:relative;}	 
+		 @-webkit-keyframes Move
+		 {
+		 	0{left:0;}
+		 	5%{left:5px;}
+		 	10%{left:10px;}
+		 	25%{left:25px;background-color:#8080C0;}
+		 	50%{left:50px;}
+		 	100%{left:0;}
+		 }
+		 #first{-webkit-animation-delay:0;}
+		 #second{-webkit-animation-delay:1s;}
+		 #third{-webkit-animation-delay:2s;}
+		 #fourth{-webkit-animation-delay:3s;}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		
+		<div class="nav">
+			<ul>
+				<li id="first">
+					<div>This is the 1th div.</div>
+				</li>
+				<li id="second">
+					<div>This is the 2th div.</div>
+				</li>
+				<li id="third">
+					<div>This is the 3th div.</div>
+				</li>
+				<li id="fourth">
+					<div>This is the 4th div.</div>
+				</li>
+			</ul>
+		</div>
+		
+	</div>
+</body>
+</html>
